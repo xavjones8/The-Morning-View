@@ -18,7 +18,7 @@ protocol NewsDisplaying{
 }
 
 extension NewsDisplaying{
-    func configure(for article: NewsResult.Article, newsController: NewsController){
+    func configure(for article: NewsStream.Article, newsController: NewsController){
         print(article)
         titleLabel.text = article.title ?? ""
         authorLabel.text = article.author ?? ""
